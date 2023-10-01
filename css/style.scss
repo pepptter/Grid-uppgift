@@ -243,6 +243,13 @@ header{
         left: 0;
         z-index: -1;
     }
+
+    // så bakgrundslinjer inte är för stora på mobil //
+    @media (max-width: 768px){
+            img{
+                max-width: 100%;
+            }
+    }
     .container{
         display: flex;
         justify-content: space-between;
@@ -307,6 +314,111 @@ header{
     }
 }
 
+.features{
+
+    display: block;
+    .logotypes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        flex: 1;
+        min-width: calc(33.33% - 20px);
+
+        @media (min-width: 992px){
+            flex: 0;
+            min-width: unset;
+            margin: 70px 0px 0px 0px;
+            margin-left: 200px;
+            margin-right: 200px;
+            gap: 50px;
+        }
+    }
+
+
+    .features-section{
+        .container{
+                border: 1px solid #191919;
+                margin-top: 100px;
+
+                @media(min-width: 992px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+            }
+
+            //gör mindre text osv för responsiv! knappen större!
+
+            .section-title{
+                .btn-learn-more{
+                    padding: 10px 150px 10px 150px;
+                    font-family: Inter, sans-serif;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                p{
+                    margin-bottom: 17px;
+                }
+                @media (min-width: 992px){
+                    flex: 0 0 35%;
+                    text-align: left;
+                    margin-left: 70px;
+                    margin-right: 60px;
+                    padding-top: 0px;
+
+                }
+            }
+
+            .features-grid{
+                flex-wrap: wrap;
+                margin-top: 100px;
+                margin-bottom: 100px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+                .m-between-icon-text{
+                    margin-bottom: 40px;
+                }
+                a{
+                    text-decoration: none;
+                    color: #191919;
+
+                    h3{
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                    }
+                    p{
+                        font-family: Inter, sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+                @media (min-width: 992px){
+                    .flex-item{
+                        a{
+                            background-color: brown;
+                            padding: 10px;
+                            text-align: center;
+                        }
+
+                    }
+                }
+            }
+            .gapflex{
+                display: none;
+                @media (min-width: 992px){
+                    display: flex;
+                    flex: 0 0 20%;
+                }
+            }
+        }
+    }
+
+
+}
 
 .project-and-cases{
     .container{
@@ -373,22 +485,31 @@ header{
     background-color: #f0efe9;
     padding-top: 80px;
     padding-bottom: 80px;
+    z-index: 0;
 
     .background-wavy-lines{
         position:absolute;
-        bottom: 48px;
         right: 0;
+        bottom: 20px;
+        z-index: -1;
+        @media (min-width: 992px){
+        bottom: 48px;
+        }
     }
     .container{
-        display: flex;
+        display: block;
         justify-content:space-between;
         align-items: center;
-
+        text-align: center;
+        gap:20px;
 
         h2{
             font-family: 'DM Sans', sans-serif;
-            font-size: 45px;
+            font-size: 40px;
             font-weight: 700;
+            @media (min-width: 768px){
+                font-size: 45px;
+            }
         }
         form{
             input{
@@ -401,6 +522,12 @@ header{
                 border: 1px solid rgba(25, 25, 25, 0.10);
                 margin-right: 20px;
             }
+        }
+
+        @media (min-width: 768px){
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
         }
     }
 }
