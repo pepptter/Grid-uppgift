@@ -55,6 +55,20 @@ htlm, body{
     }
 
 }
+.btn-round-transparent{
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 50%;
+        border: 3px solid #191919;
+        width: 46px;
+        height: 46px;
+        text-align: center;
+        line-height: 42px;
+        text-decoration: none;
+        color: #191919;
+
+
+}
 
 .btn-transparent{
     background-color: transparent;
@@ -339,40 +353,49 @@ header{
 
 
     .features-section{
+        display: flex;
         .container{
                 border: 1px solid #191919;
                 margin-top: 100px;
+                text-align: center;
 
                 @media(min-width: 992px) {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    max-width: 1520px;
+                    text-align: left;
             }
-
-            //gör mindre text osv för responsiv! knappen större!
 
             .section-title{
                 .btn-learn-more{
-                    padding: 10px 150px 10px 150px;
+                    padding: 25px 100px 25px 100px;
                     font-family: Inter, sans-serif;
                     font-weight: 600;
+                    font-size: 24px;
+                    border-radius: 50px;
+
+                    @media (min-width: 992px){
+                    padding: 10px 150px 10px 150px;
+                    font-weight: 600;
                     font-size: 16px;
+                    border-radius: 25px;
+                    }
                 }
                 p{
                     margin-bottom: 17px;
                 }
                 @media (min-width: 992px){
-                    flex: 0 0 35%;
+                    flex: 0 0 30%;
                     text-align: left;
                     margin-left: 70px;
-                    margin-right: 60px;
+                    margin-right: 120px;
                     padding-top: 0px;
 
                 }
             }
 
             .features-grid{
-                flex-wrap: wrap;
                 margin-top: 100px;
                 margin-bottom: 100px;
                 display: grid;
@@ -420,6 +443,103 @@ header{
 
 }
 
+.about-company{
+    margin-top: 120px;
+
+    .container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .founder{
+            flex: 0 0 50%;
+            z-index: -1;
+            position: relative;
+
+        }
+        .founder-information-box{
+            position: absolute;
+            z-index: 0;
+            width: 368px;
+            height: 180px;
+            background-color: #BEEBFF;
+            bottom: 42px;
+            left: 20px;
+            @media (min-width: 992px){
+                flex: 0 0 50%;
+                bottom: 42px;
+                left: -42px;
+            }
+
+            .founder-text{
+                margin-top: 20px;
+                margin-left: 20px;
+                h5{
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color:#191919;
+                    .founder-red{
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        color: #F94D1C;
+                    }
+                }
+                .founder-paragraph{
+                    margin-top: 14px;
+                    font-style: italic;
+                    font-weight: 500;
+                }
+            }
+        }
+        .about-company-box{
+            text-align: center;
+            margin-left: 50px;
+            max-width: 532px;
+
+            @media (min-width: 1400px){
+                flex: 0 0 calc(50% - 50px);
+                text-align: left;
+                max-height: 589px;
+            }
+            .colorwhite{
+                color: white;
+            }
+            .colorwhite:hover{
+                color: #191919;
+            }
+            .paragraph{
+                color:#191919;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .flex-text{
+                margin-left: 20px;
+                text-decoration: none;
+                color: #191919;
+
+            }
+            .margin{
+                margin-left: 10px;
+
+            }
+            .flex-text:hover{
+                .margin{
+                    text-decoration: underline;
+                }
+                .btn-round-transparent{
+                    color: #ffffff;
+                    background-color: #191919;
+                }
+            }
+        }
+
+
+    }
+
+
+}
 .project-and-cases{
     .container{
         .section-title{

@@ -53,6 +53,19 @@ htlm, body {
   color: #191919;
 }
 
+.btn-round-transparent {
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #191919;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 42px;
+  text-decoration: none;
+  color: #191919;
+}
+
 .btn-transparent {
   background-color: transparent;
   border: 1px solid #191919;
@@ -323,37 +336,51 @@ header .container .menu .btn-login {
     gap: 50px;
   }
 }
+.features .features-section {
+  display: flex;
+}
 .features .features-section .container {
   border: 1px solid #191919;
   margin-top: 100px;
+  text-align: center;
 }
 @media (min-width: 992px) {
   .features .features-section .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1520px;
+    text-align: left;
   }
 }
 .features .features-section .container .section-title .btn-learn-more {
-  padding: 10px 150px 10px 150px;
+  padding: 25px 100px 25px 100px;
   font-family: Inter, sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 24px;
+  border-radius: 50px;
+}
+@media (min-width: 992px) {
+  .features .features-section .container .section-title .btn-learn-more {
+    padding: 10px 150px 10px 150px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+  }
 }
 .features .features-section .container .section-title p {
   margin-bottom: 17px;
 }
 @media (min-width: 992px) {
   .features .features-section .container .section-title {
-    flex: 0 0 35%;
+    flex: 0 0 30%;
     text-align: left;
     margin-left: 70px;
-    margin-right: 60px;
+    margin-right: 120px;
     padding-top: 0px;
   }
 }
 .features .features-section .container .features-grid {
-  flex-wrap: wrap;
   margin-top: 100px;
   margin-bottom: 100px;
   display: grid;
@@ -392,6 +419,95 @@ header .container .menu .btn-login {
     display: flex;
     flex: 0 0 20%;
   }
+}
+
+.about-company {
+  margin-top: 120px;
+}
+.about-company .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-company .container .founder {
+  flex: 0 0 50%;
+  z-index: -1;
+  position: relative;
+}
+.about-company .container .founder-information-box {
+  position: absolute;
+  z-index: 0;
+  width: 368px;
+  height: 180px;
+  background-color: #BEEBFF;
+  bottom: 42px;
+  left: 20px;
+}
+@media (min-width: 992px) {
+  .about-company .container .founder-information-box {
+    flex: 0 0 50%;
+    bottom: 42px;
+    left: -42px;
+  }
+}
+.about-company .container .founder-information-box .founder-text {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.about-company .container .founder-information-box .founder-text h5 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #191919;
+}
+.about-company .container .founder-information-box .founder-text h5 .founder-red {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #F94D1C;
+}
+.about-company .container .founder-information-box .founder-text .founder-paragraph {
+  margin-top: 14px;
+  font-style: italic;
+  font-weight: 500;
+}
+.about-company .container .about-company-box {
+  text-align: center;
+  margin-left: 50px;
+  max-width: 532px;
+}
+@media (min-width: 1400px) {
+  .about-company .container .about-company-box {
+    flex: 0 0 calc(50% - 50px);
+    text-align: left;
+    max-height: 589px;
+  }
+}
+.about-company .container .about-company-box .colorwhite {
+  color: white;
+}
+.about-company .container .about-company-box .colorwhite:hover {
+  color: #191919;
+}
+.about-company .container .about-company-box .paragraph {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.about-company .container .about-company-box .flex-text {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #191919;
+}
+.about-company .container .about-company-box .margin {
+  margin-left: 10px;
+}
+.about-company .container .about-company-box .flex-text:hover .margin {
+  text-decoration: underline;
+}
+.about-company .container .about-company-box .flex-text:hover .btn-round-transparent {
+  color: #ffffff;
+  background-color: #191919;
 }
 
 .project-and-cases .container .section-title {
