@@ -842,15 +842,15 @@ header .container .menu .btn-login {
     gap: 15px;
     font-size: 14px;
   }
-  .meet-our-team .container .dotline .active {
-    opacity: 100%;
-  }
-  .meet-our-team .container .dotline i {
-    opacity: 25%;
-  }
-  .meet-our-team .container .dotline i:hover {
-    opacity: 100%;
-  }
+}
+.meet-our-team .container .dotline i {
+  opacity: 25%;
+}
+.meet-our-team .container .dotline i.active {
+  opacity: 100%;
+}
+.meet-our-team .container .dotline i:hover {
+  opacity: 100%;
 }
 
 .testimonial {
@@ -1020,11 +1020,11 @@ header .container .menu .btn-login {
     gap: 15px;
     font-size: 14px;
   }
-  .article-and-news .container .dotline .active {
-    opacity: 100%;
-  }
   .article-and-news .container .dotline i {
     opacity: 25%;
+  }
+  .article-and-news .container .dotline i.active {
+    opacity: 100%;
   }
   .article-and-news .container .dotline i:hover {
     opacity: 100%;

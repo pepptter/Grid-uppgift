@@ -881,20 +881,21 @@ header{
             margin-bottom: 90px;
             gap: 15px;
             font-size: 14px;
-            .active{
-                opacity: 100%;
             }
             i{
                 opacity: 25%;
+                &.active{
+                    opacity: 100%;
+                }
                 &:hover{
                     opacity: 100%;
                 }
             }
 
-            }
         }
     }
 }
+
 
 .testimonial{
     background-color: #F0D082;
@@ -1061,11 +1062,11 @@ header{
             margin-bottom: 90px;
             gap: 15px;
             font-size: 14px;
-            .active{
-                opacity: 100%;
-            }
             i{
                 opacity: 25%;
+                &.active{
+                    opacity: 100%;
+                }
                 &:hover{
                     opacity: 100%;
                 }
