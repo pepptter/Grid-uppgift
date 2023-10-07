@@ -24,6 +24,7 @@ htlm, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
+  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -37,12 +38,13 @@ htlm, body {
 .btn-black {
   background-color: #191919;
   border: 1px solid #191919;
-  color: #F9D783;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 12px 30px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
+  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 }
 .btn-black i {
   margin-left: 8px;
@@ -60,8 +62,8 @@ htlm, body {
   border: 3px solid #191919;
   width: 46px;
   height: 46px;
+  line-height: 40px;
   text-align: center;
-  line-height: 42px;
   text-decoration: none;
   color: #191919;
 }
@@ -75,6 +77,7 @@ htlm, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
+  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
 }
 .btn-transparent i {
   margin-left: 8px;
@@ -186,6 +189,7 @@ header .container .social-media-bar a {
   color: #191919;
   font-size: 1.3rem;
   margin-left: 10px;
+  transition: color 0.2s ease-in-out;
 }
 header .container .social-media-bar a:hover {
   color: #605d5d;
@@ -502,15 +506,17 @@ header .container .menu .btn-login {
   text-decoration: none;
   color: #191919;
 }
-.about-company .container .about-company-box .margin {
-  margin-left: 10px;
+.about-company .container .about-company-box .flex-text:hover .btn-round-transparent {
+  transition: font-weight 0.25s ease-in-out, background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+  color: #ffffff;
+  background-color: #191919;
 }
 .about-company .container .about-company-box .flex-text:hover .margin {
   text-decoration: underline;
+  font-weight: 600;
 }
-.about-company .container .about-company-box .flex-text:hover .btn-round-transparent {
-  color: #ffffff;
-  background-color: #191919;
+.about-company .container .margin {
+  margin-left: 10px;
 }
 
 .our-services {
@@ -542,9 +548,20 @@ header .container .menu .btn-login {
   }
 }
 .our-services .container .flex-item {
+  text-decoration: none;
+  color: #191919;
   padding-left: 30px;
   padding-right: 30px;
   background-color: #ffffff;
+  transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+}
+.our-services .container .flex-item:hover {
+  background-color: #F9D783;
+}
+.our-services .container .flex-item:hover .arrowbutton .button-round {
+  color: #191919;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 @media (min-width: 992px) {
   .our-services .container .flex-item {
@@ -1092,67 +1109,70 @@ footer {
 footer p {
   color: rgba(255, 255, 255, 0.7);
 }
-footer .footer-section .container {
+footer .footer-links .container {
   padding-top: 50px;
   display: block;
   text-align: center;
 }
 @media (min-width: 992px) {
-  footer .footer-section .container {
+  footer .footer-links .container {
     padding-top: 110px;
     text-align: left;
     display: flex;
   }
 }
-footer .footer-section .container .logo-and-text {
+footer .footer-links .container .logo-and-text {
   margin-bottom: 30px;
 }
-footer .footer-section .container .logo-and-text img {
-  margin-bottom: 25px;
+footer .footer-links .container .logo-and-text img {
+  margin-bottom: 30px;
 }
 @media (min-width: 992px) {
-  footer .footer-section .container .logo-and-text {
+  footer .footer-links .container .logo-and-text {
     flex: 0 0 25%;
     margin-right: 100px;
     margin-bottom: 0px;
   }
 }
-footer .footer-section .container .links-grid {
+footer .footer-links .container .links-grid {
   display: grid;
   grid-template-columns: auto auto;
   margin-bottom: 40px;
 }
 @media (min-width: 992px) {
-  footer .footer-section .container .links-grid {
+  footer .footer-links .container .links-grid {
     margin-bottom: 85px;
     gap: 110px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-footer .footer-section .container .links-grid .grid-item {
+footer .footer-links .container .links-grid .grid-item {
   display: flex;
   align-items: center;
   flex-direction: column;
   white-space: nowrap;
 }
 @media (min-width: 992px) {
-  footer .footer-section .container .links-grid .grid-item {
+  footer .footer-links .container .links-grid .grid-item {
     align-items: start;
   }
 }
-footer .footer-section .container .links-grid h3 {
+footer .footer-links .container .links-grid h3 {
   color: #ffffff;
   margin-bottom: 20px;
 }
 @media (min-width: 992px) {
-  footer .footer-section .container .links-grid h3 {
+  footer .footer-links .container .links-grid h3 {
     margin-bottom: 50px;
   }
 }
-footer .footer-section .container .links-grid a {
+footer .footer-links .container .links-grid a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
+}
+footer .footer-links .container .links-grid a:hover {
+  text-decoration: underline;
 }
 footer .footer-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -1175,6 +1195,7 @@ footer .footer-footer .container .social-media-bar a {
   color: #ffffff;
   font-size: 1.3rem;
   margin-left: 10px;
+  transition: color 0.2s ease-in-out;
 }
 footer .footer-footer .container .social-media-bar a:hover {
   color: #605d5d;

@@ -24,6 +24,8 @@ htlm, body{
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+
 
     i{
         margin-left: 8px;
@@ -38,12 +40,14 @@ htlm, body{
 .btn-black{
     background-color: #191919;
     border: 1px solid #191919;
-    color: #F9D783;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 12px 30px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+
 
     i{
         margin-left: 8px;
@@ -62,8 +66,8 @@ htlm, body{
         border: 3px solid #191919;
         width: 46px;
         height: 46px;
+        line-height: 40px;
         text-align: center;
-        line-height: 42px;
         text-decoration: none;
         color: #191919;
 
@@ -79,6 +83,8 @@ htlm, body{
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
+    transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+
 
     i{
         margin-left: 8px;
@@ -192,6 +198,8 @@ header{
                 color: #191919;
                 font-size: 1.3rem;
                 margin-left: 10px;
+                transition: color 0.2s ease-in-out;
+
 
                 &:hover{
                     color: #605d5d;
@@ -519,27 +527,37 @@ header{
                 text-decoration: none;
                 color: #191919;
 
-            }
-            .margin{
-                margin-left: 10px;
+                &:hover{
 
-            }
-            .flex-text:hover{
-                .margin{
-                    text-decoration: underline;
+                    .btn-round-transparent{
+                        transition: font-weight 0.25s ease-in-out, background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+
+                        color: #ffffff;
+                        background-color: #191919;
+                    }
+
+                    .margin{
+                        text-decoration: underline;
+                        font-weight: 600;
+
+                    }
+
                 }
-                .btn-round-transparent{
-                    color: #ffffff;
-                    background-color: #191919;
+
+
+
                 }
-            }
+
         }
+        .margin{
+            margin-left: 10px;
 
-
+        }
     }
 
 
 }
+
 
 .our-services{
     background-color: #F0EFE9;
@@ -572,10 +590,23 @@ header{
             }
 
             .flex-item{
-
+                text-decoration: none;
+                color: #191919;
                 padding-left: 30px;
                 padding-right: 30px;
                 background-color: #ffffff;
+                transition: background-color 0.2s ease-in-out, color 0.25s ease-in-out;
+                &:hover{
+                    background-color: #F9D783;
+                    .arrowbutton{
+                        .button-round{
+                            color: #191919;
+                            background-color: #ffffff;
+                            border-color: #ffffff;
+                        }
+                    }
+                }
+
                 @media (min-width: 992px){
                     width: 308px;
                     height: 330px;
@@ -607,6 +638,7 @@ header{
                 .arrowbutton{
                     display: flex;
                     justify-content: flex-end;
+
                     .button-round{
                         display: inline-block;
                         background-color: #191919;
@@ -618,6 +650,7 @@ header{
                         line-height: 42px;
                         text-decoration: none;
                         color: #ffffff;
+
                         &.button-active{
                             color: #191919;
                             background-color: #ffffff;
@@ -1136,7 +1169,7 @@ footer{
     }
     margin-left: 5px;
 
-    .footer-section{
+    .footer-links{
         .container{
 
             padding-top: 50px;
@@ -1150,7 +1183,7 @@ footer{
             .logo-and-text{
                 margin-bottom: 30px;
                 img{
-                    margin-bottom: 25px;
+                    margin-bottom: 30px;
                 }
                 @media (min-width: 992px){
                     flex: 0 0 25%;
@@ -1190,6 +1223,9 @@ footer{
                     text-decoration: none;
                     color: rgba(255, 255, 255, 0.7);
                     margin-bottom: 20px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
 
 
@@ -1216,6 +1252,7 @@ footer{
                     color: #ffffff;
                     font-size: 1.3rem;
                     margin-left: 10px;
+                    transition: color 0.2s ease-in-out;
 
                     &:hover{
                         color: #605d5d;
