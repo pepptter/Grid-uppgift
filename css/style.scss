@@ -1183,9 +1183,8 @@ footer{
         img{
             max-width: 100%;
         }
-    }
-        .container{
 
+        .container{
             padding-top: 50px;
             display: block;
             text-align: center;
@@ -1245,7 +1244,7 @@ footer{
 
             }
         }
-
+    }
 
     .footer-footer{
         border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -1289,11 +1288,14 @@ footer{
         left: 0px;
     }
     .container{
-        padding-top: 100px;
+        padding-top: 50px;
         display:flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        @media (min-width: 992px){
+            padding-top: 100px;
+        }
         .menu{
             display:flex;
             justify-content: center;
