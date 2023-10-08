@@ -145,27 +145,30 @@
                         <h2>Leave us a message</h2>
                         <h2>for any information.</h2>
                     </div>
-                    <div class="message-form">
-                        <form class="one-row-form">
+                    <!-- method="post" skapar felkod så utesluter den, väntar på javascript-->
+                    <form id="message-form" class="message-form">
+                        <div class="one-row-form">
                         <input
+                            id="fullName"
                             type="text"
-                            name="fullname"
+                            name="fullName"
                             placeholder="Name*"
                         />
-                        </form>
-                        <form class="one-row-form">
+                        </div>
+                        <div class="one-row-form">
                         <input
-                            type="text"
-                            name="email-address"
+                            id="emailAddress"
+                            type="email"
+                            name="emailAddress"
                             placeholder="Email*"
                         />
-                        </form>
-                        <form class="multi-row-form">
-                            <textarea name="your-message" placeholder="Your Message* "></textarea>
-                        </form>
-                        <input type="submit" value="Send Message" class="btn-yellow" >
+                        </div>
+                        <div class="multi-row-form">
+                            <textarea id="yourMessage" name="yourMessage" placeholder="Your Message* "></textarea>
+                        </div>
+                        <button type="submit" class="btn-yellow" >Submit</button>
 
-                    </div>
+                      </form>
                 </div>
 
             </div>

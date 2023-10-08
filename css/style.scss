@@ -342,17 +342,15 @@ header{
     display: block;
     .logotypes{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 30px;
-        flex: 1;
-        min-width: calc(33.33% - 20px);
+        margin-top: 50px;
 
         @media (min-width: 992px){
-            flex: 0;
-            min-width: unset;
+            flex-direction: row;
+            flex-wrap: wrap;
             margin: 70px 0px 0px 0px;
             margin-left: 200px;
             margin-right: 200px;
@@ -365,10 +363,11 @@ header{
         display: flex;
         .container{
                 border: 1px solid #191919;
-                margin-top: 100px;
                 text-align: center;
+                margin-top: 40px;
 
                 @media(min-width: 992px) {
+                    margin-top: 100px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -918,6 +917,8 @@ header{
             }
             i{
                 opacity: 25%;
+                transition: opacity 0.25s ease-in-out;
+
                 &.active{
                     opacity: 100%;
                 }
@@ -1097,6 +1098,8 @@ header{
             gap: 15px;
             font-size: 14px;
             i{
+                transition: opacity 0.25s ease-in-out;
+
                 opacity: 25%;
                 &.active{
                     opacity: 100%;
@@ -1413,7 +1416,7 @@ footer{
                         margin-bottom: 15px;
                         color: #191919;
                         text-decoration: none;
-                        padding: 15px 30px;
+                        padding: 15px 42px;
                         font-size: 16px;
                         border-radius: 25px;
                         outline: none;
@@ -1426,7 +1429,7 @@ footer{
                         margin-bottom: 15px;
                         color: #191919;
                         text-decoration: none;
-                        padding: 15px 30px;
+                        padding: 15px 42px;
                         font-size: 16px;
                         border-radius: 25px;
                         outline: none;
